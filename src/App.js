@@ -23,30 +23,26 @@ const App = () => {
   };
   return (
     <>
-      {/* <div>
-        {!isLoggedIn ? (
-           <>
-           <Navbar setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn} />
-           <Routes>
-             <Route path="/home" element={<Home />} />
-             <Route path="/contact" element={<Contact />} />
-             <Route path="/help" element={<Help />}/>
-           </Routes>
-         </>
-          
-        ) : (
-          <AutoLoginpage setIsLoggedIn={setIsLoggedIn} />
-        )}
-      </div> */}
-      {user ? (
+   
+      
+     {user ? (
         <div>
           <h2>Welcome,{user}</h2>
           <button onClick={() => handelogout()}>Logout</button>
-          
         </div>
       ) : (
-        <Sessionex setuser={setuser} />
+       <div className="row "  style={{height:'900px'}}>
+        <div className="col-md-5 bg-dark"  style={{borderRadius:'20px'}} >
+        
+        </div>
+        <div className="col-md-7 ">
+       <div className="container">
+       <Sessionex setuser={setuser} />
+       </div>
+        </div>
+       </div>
       )}
+     
     </>
   );
 };
