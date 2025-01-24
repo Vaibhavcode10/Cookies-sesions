@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import img from "./img.jpg";
 import Cookies from "js-cookie";
-const LoginPage = ({ setIsLoggedIn }) => {
+const AutoLoginpage = ({ setIsLoggedIn }) => {
   const [email, setemail] = useState("");
   const [theme, settheme] = useState("Light");
   const [password, setpassword] = useState("");
@@ -119,4 +119,4 @@ const LoginPage = ({ setIsLoggedIn }) => {
   );
 };
 
-export default LoginPage;
+export default AutoLoginpage;
